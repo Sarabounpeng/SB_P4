@@ -1,0 +1,19 @@
+@keyframes price-anim {
+    0% {
+        width: 100%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes check-menu-anim {
+	0% {
+		transform: translateX(60px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}

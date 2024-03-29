@@ -1,0 +1,60 @@
+footer {
+    display: grid;
+    width: 100%;
+    min-height: 114px;
+    background-color: #353535;
+    color: #FFFFFF;
+
+    .footer {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        gap: 35px;
+
+        .links {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .f-logo {
+            margin-left: 15px;
+            margin-right: -5%;
+            font-style: italic;
+            font-size: 18px;
+            font-family: shrikhand;
+        }
+
+        a {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        padding: 20px 10px;
+
+        .footer {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column-reverse;
+            gap: 15px;
+
+            .links {
+                display: grid;
+                justify-content: start;
+                gap: 5px;
+            }
+        }
+
+        .f-logo {
+            margin-left: 0px !important;
+        }
+
+
+    }
+
+}

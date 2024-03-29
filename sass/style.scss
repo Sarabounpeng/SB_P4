@@ -1,0 +1,390 @@
+/* Global variables */
+$bg-white: rgba(246, 246, 246, 1);
+$main-txt-color-black: black;
+
+html,
+body {
+    max-height: 100vh;
+    max-width: 100vw;
+    margin: 0 !important;
+    overflow-x: hidden;
+}
+
+
+* {
+    font-family: Roboto;
+    color: inherit;
+    text-decoration: none;
+}
+
+.loader {
+    background-color: #f6f6f6;
+    place-items: center;
+    display: grid;
+    position: fixed;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.9;
+    animation: loader 3s both;
+    /*animation: disappear 3s;*/
+   
+    @keyframes loader{
+        100% {
+            display: none;
+            visibility: hidden;
+        }        
+    }
+    .loader-container i {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        margin: 0 15px;
+        position: relative;
+        animation: circles 1.2s ease-in-out infinite;
+        border-radius: 100%;
+ 
+        .loader-container i:nth-child(1) {
+                background-color: #9356DC;
+                animation-delay: 0s;
+                position: relative;   
+        }
+        .loader-container i:nth-child(2) {
+            background-color: #FF79DA;
+            animation-delay: 0.2s;
+            position: relative;
+        }
+        .loader-container i:nth-child(3) {
+            background-color: #99E2D0;
+            animation-delay: 0.4s;
+            position: relative;
+        }
+        @keyframes circles{
+            0%{
+               height: 20px;
+           }
+            50%{
+               height: 60px;
+            }
+
+            100%{
+                height: 20px;
+           }
+        }
+    }  
+}
+
+#home {
+    .header {
+        height: 96px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            width: 200px;
+            height: 34.2px;
+        }
+    }
+
+    .location {
+        width: 100%;
+        height: 50px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #EAEAEA;
+
+        >i {
+            margin-right: 17px;
+        }
+    }
+
+    .Hero {
+        width: 100%;
+        height: 200px;
+        background-color: #f6f6f6;
+        text-align: center;
+        padding: 30px 0;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title {
+        font-size: 2em;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .substitle {
+        font-size: 1em;
+    }
+
+    .R-buttonrounded {
+        width: 218px;
+        height: 50px;
+        border-radius: 25px;
+        font-size: 16px;
+        background: linear-gradient(#FF79DA, #9356DC);
+        border-style: none;
+        box-shadow: 0px 4px 10px 0px #00000040;
+        color: #FFFFFF;
+        margin: 0 auto;
+        display: grid;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+            background: linear-gradient(200.64deg, #FF79DA 110.74%, #9356DC -5.2%),
+                linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+
+        }
+    }
+
+    .fontionnement-container {
+        margin-left: auto;
+        padding: 0 10%;
+        margin-bottom: 50px;
+        margin-right: auto;
+    }
+
+
+    h2.fontionnement {
+        font-size: 24px !important;
+        width: 275px;
+        height: 31px;
+
+    }
+
+    .fontionnement-container .buttons {
+        display: flex;
+        /*justify-content: space-between;*/
+        width: 100%;
+        justify-content: center;
+        gap: 30px;
+
+
+        a[class^="button-"] {
+            text-decoration: none;
+            position: relative;
+            width: 28%;
+            height: 72.38px;
+            border-radius: 20px;
+            background: $bg-white;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            color: $main-txt-color-black;
+            /* padding-right: 38px;*/
+            padding-right: 28px;
+
+            i:nth-child(2) {
+                margin: 0 23px;
+            }
+        }
+    }
+
+    .notif {
+        width: 20px;
+        height: 20px;
+        background: rgba(147, 86, 220, 1);
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        left: 0;
+        margin-left: -10px;
+    }
+
+    section.restaurants {
+        background: $bg-white;
+        padding: 30px 15%;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .card {
+            position: relative;
+            width: 460px;
+            height: 100%;
+            max-height: 291px;
+            border-radius: 15px;
+            display: grid;
+            text-decoration: none;
+            color: $main-txt-color-black;
+        }
+    }
+
+    .card {
+        img {
+            width: 100%;
+            height: 231px;
+            border-radius: 15px 15px 0 0;
+            object-fit: cover;
+        }
+
+        .card__badge {
+            width: 80px;
+            height: 29px;
+            border-radius: 2px;
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: center;
+            color: rgba(0, 135, 102, 1);
+            background: rgba(153, 226, 208, 1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h4 {
+            margin: 0;
+        }
+
+        .card__content {
+            font-weight: 300;
+        }
+
+        .card__footer {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+            padding: 0 18px;
+            border-radius: 0 0 15px 15px;
+
+            .card__title {
+                font-size: 18px;
+            }
+
+            .card__subtitle {
+                font-size: 17px;
+            }
+        }
+
+        .card__like.menu__like--bg {
+            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+        }
+
+        .card__btn.menu__btn {
+            input {
+                display: none;
+
+                &+label {
+                    display: inline-block;
+                    width: 22px;
+                    height: 21px;
+                    background-image: url(../images/Icon/dislike.png);
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    cursor: pointer;
+                }
+
+                &:checked+label {
+                    background-image: url(../images/Icon/liked.png);
+                }
+            }
+        }
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        .title {
+            font-size: 1.5em;
+        }
+
+        .Hero {
+            width: unset;
+            padding: 30px 5px;
+        }
+
+        .header,
+        .location {
+            position: relative;
+            box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            z-index: 1;
+        }
+
+        .fontionnement-container {
+
+            .buttons {
+                flex-direction: column;
+                width: 335px;
+                margin-left: -27px;
+
+
+                .button-1 {
+                    width: 335px;
+                    height: 72px;
+                    margin-bottom: 25px;
+                }
+
+                .button-2 {
+
+                    height: 72px;
+                    margin-bottom: 25px;
+                }
+
+                .button-3 {
+
+                    height: 72px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 992px) {
+        .fontionnement-container {
+            .buttons {
+                display: grid;
+                gap: 13px;
+                justify-content: center;
+
+                a[class^=button-] {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        section.restaurants {
+            background: rgb(246, 246, 246);
+            padding: 30px 15px;
+
+            .cards {
+                display: block;
+                width: 100%;
+                justify-content: center;
+                margin-bottom: 0px;
+
+                .card {
+                    margin-bottom: 50px;
+                    width: 100%;
+                }
+            }
+        }
+
+    }
+}
