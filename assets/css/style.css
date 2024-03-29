@@ -340,7 +340,7 @@ body {
   width: 30px;
   height: 30px;
   position: absolute;
-  margin-left: -40%;
+  margin-left: -35%;
 }
 #menu .header img {
   width: 200px;
@@ -532,12 +532,12 @@ body {
   #menu .header {
     box-shadow: none;
     gap: 7%;
-  }
-  #menu .header .fa-arrow-left {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    margin-left: -30%;
+    /* .fa-arrow-left {
+         width: 30px;
+         height: 30px;
+         position: absolute;
+         margin-left: -30%;
+     }*/
   }
   #menu .c-menu {
     width: 100%;

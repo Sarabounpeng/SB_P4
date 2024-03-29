@@ -11,7 +11,7 @@
             width: 30px;
             height: 30px;
             position: absolute;
-            margin-left: -40%;
+            margin-left: -35%;
         }
 
         img {
@@ -251,12 +251,14 @@
     // Small devices (landscape phones, 576px and up)
     @media (max-width: 576px) {
 
-        .header .fa-arrow-left {
+        .header{
+        .fa-arrow-left {
             width: 30px;
             height: 30px;
             position: absolute;
             margin-left: -15%;
         }
+    } 
     }
 
     // Medium devices (tablets, 768px and up)
@@ -265,12 +267,12 @@
             box-shadow: none;
             gap: 7%;
 
-            .fa-arrow-left {
+           /* .fa-arrow-left {
                 width: 30px;
                 height: 30px;
                 position: absolute;
                 margin-left: -30%;
-            }
+            }*/
         }
 
         .c-menu {
