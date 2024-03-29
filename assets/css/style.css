@@ -126,7 +126,8 @@ body {
 }
 #home .R-buttonrounded:hover {
   transform: scale(1.1);
-  background: linear-gradient(200.64deg, #FF79DA 110.74%, #9356DC -5.2%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  /*background: linear-gradient(200.64deg, #FF79DA 110.74%, #9356DC -5.2%),
+      linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));*/
 }
 #home .fontionnement-container {
   margin-left: auto;
