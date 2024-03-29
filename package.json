@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./sass/app.scss:./assets/css/style.css"
+    
   },
   "author": "",
   "license": "ISC",
