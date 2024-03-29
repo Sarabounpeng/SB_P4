@@ -334,6 +334,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 #menu .header .fa-arrow-left {
   width: 30px;
