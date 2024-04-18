@@ -177,7 +177,7 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
         
 
 
-        a[class^="button-"] {
+        a {
             text-decoration: none;
             position: relative;
             width: 100%;
@@ -188,15 +188,18 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
             display: flex;
             align-items: center;
             color: $main-txt-color-black;
-            padding-right: 25%;
-            padding-right: 25%;
+            box-sizing: border-box;
          
 
-            i:nth-child(2) {
+            i {
                 margin: 0 23px;
             }
         }
+        @media only screen and (min-width: 600px){
+            flex-direction: row;
+        }
     }
+
 
     .notif {
         width: 20px;
@@ -334,36 +337,6 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
             z-index: 1;
         }
 
-        .fontionnement-container {
-
-            .buttons {
-                display: flex;
-                /*flex-direction: column;*/
-                width: 335px;
-                margin-left: -27px;
-                
-                
-
-
-                .button-1 {
-                    width: 335px;
-                    height: 72px;
-                    margin-bottom: 25px;
-                }
-
-                .button-2 {
-
-                    height: 72px;
-                    margin-bottom: 25px;
-                }
-
-                .button-3 {
-
-                    height: 72px;
-                    margin-bottom: 25px;
-                }
-            }
-        }
         .cards {
            
             display: flex;
@@ -436,19 +409,19 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
 
     }
 
-    @media (max-width: 992px) {
+   /* @media (max-width: 992px) {
         .fontionnement-container {
             .buttons {
                 display: grid;
                 gap: 13px;
                 justify-content: center;
 
-                a[class^=button-] {
+               / a[class^=button-] {
                     width: 100%;
                 }
             }
         }
-    }
+    }*/
 
     @media (max-width: 1200px) {
         section.restaurants {

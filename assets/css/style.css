@@ -67,6 +67,21 @@ body {
   }
 }
 
+#home {
+  /* @media (max-width: 992px) {
+       .fontionnement-container {
+           .buttons {
+               display: grid;
+               gap: 13px;
+               justify-content: center;
+
+              / a[class^=button-] {
+                   width: 100%;
+               }
+           }
+       }
+   }*/
+}
 #home .header {
   height: 96px;
   width: 100%;
@@ -150,7 +165,7 @@ body {
   justify-content: center;
   gap: 25px;
 }
-#home .fontionnement-container .buttons a[class^=button-] {
+#home .fontionnement-container .buttons a {
   text-decoration: none;
   position: relative;
   width: 100%;
@@ -161,11 +176,15 @@ body {
   display: flex;
   align-items: center;
   color: black;
-  padding-right: 25%;
-  padding-right: 25%;
+  box-sizing: border-box;
 }
-#home .fontionnement-container .buttons a[class^=button-] i:nth-child(2) {
+#home .fontionnement-container .buttons a i {
   margin: 0 23px;
+}
+@media only screen and (min-width: 600px) {
+  #home .fontionnement-container .buttons {
+    flex-direction: row;
+  }
 }
 #home .notif {
   width: 20px;
@@ -278,25 +297,6 @@ body {
   #home .header {
     z-index: 1;
   }
-  #home .fontionnement-container .buttons {
-    display: flex;
-    /*flex-direction: column;*/
-    width: 335px;
-    margin-left: -27px;
-  }
-  #home .fontionnement-container .buttons .button-1 {
-    width: 335px;
-    height: 72px;
-    margin-bottom: 25px;
-  }
-  #home .fontionnement-container .buttons .button-2 {
-    height: 72px;
-    margin-bottom: 25px;
-  }
-  #home .fontionnement-container .buttons .button-3 {
-    height: 72px;
-    margin-bottom: 25px;
-  }
   #home .cards {
     display: flex;
     justify-content: space-between;
@@ -354,16 +354,6 @@ body {
   }
   #home .card .card__footer .card__subtitle {
     font-size: 17px;
-  }
-}
-@media (max-width: 992px) {
-  #home .fontionnement-container .buttons {
-    display: grid;
-    gap: 13px;
-    justify-content: center;
-  }
-  #home .fontionnement-container .buttons a[class^=button-] {
-    width: 100%;
   }
 }
 @media (max-width: 1200px) {
