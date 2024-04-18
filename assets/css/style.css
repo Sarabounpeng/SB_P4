@@ -165,7 +165,7 @@ body {
   justify-content: center;
   gap: 25px;
 }
-#home .fontionnement-container .buttons a {
+#home .fontionnement-container .buttons div {
   text-decoration: none;
   position: relative;
   width: 100%;
@@ -178,15 +178,10 @@ body {
   color: black;
   box-sizing: border-box;
 }
-#home .fontionnement-container .buttons a i {
+#home .fontionnement-container .buttons div i {
   margin: 0 23px;
 }
-@media only screen and (min-width: 600px) {
-  #home .fontionnement-container .buttons {
-    flex-direction: row;
-  }
-}
-#home .notif {
+#home .fontionnement-container .buttons div span {
   width: 20px;
   height: 20px;
   background: rgb(147, 86, 220);
@@ -195,6 +190,11 @@ body {
   text-align: center;
   left: 0;
   margin-left: -10px;
+}
+@media only screen and (min-width: 1024px) {
+  #home .fontionnement-container .buttons {
+    flex-direction: row;
+  }
 }
 #home section.restaurants {
   background: rgb(246, 246, 246);
@@ -493,11 +493,8 @@ body {
 }
 #menu .m-cards .card .c-s {
   font-size: 15px;
-}
-#menu .m-cards .card .c-s.c-price {
-  font-weight: 700;
-  overflow: hidden;
   text-overflow: ellipsis;
+  overflow: hidden;
   white-space: nowrap;
 }
 #menu .m-cards .card .c-price {

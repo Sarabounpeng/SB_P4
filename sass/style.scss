@@ -177,7 +177,7 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
         
 
 
-        a {
+        div {
             text-decoration: none;
             position: relative;
             width: 100%;
@@ -194,23 +194,22 @@ linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
             i {
                 margin: 0 23px;
             }
+            span {
+                width: 20px;
+                height: 20px;
+                background: rgba(147, 86, 220, 1);
+                border-radius: 50%;
+                color: white;
+                text-align: center;
+                left: 0;
+                margin-left: -10px;
+            }
         }
-        @media only screen and (min-width: 600px){
+        @media only screen and (min-width: 1024px){
             flex-direction: row;
         }
     }
 
-
-    .notif {
-        width: 20px;
-        height: 20px;
-        background: rgba(147, 86, 220, 1);
-        border-radius: 50%;
-        color: white;
-        text-align: center;
-        left: 0;
-        margin-left: -10px;
-    }
 
     section.restaurants {
         background: $bg-white;
