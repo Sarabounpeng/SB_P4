@@ -130,6 +130,9 @@
             padding: 15px 25px;
             cursor: pointer;
             overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            transition: margin-right 2s;
 
             .c-t {
                 margin-top: 0;
@@ -141,6 +144,9 @@
 
                 &.c-price {
                     font-weight: 700;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
                 }
 
             }
@@ -182,6 +188,7 @@
                 border-radius: 100px;
                 transform: rotate(180deg);
                 transition-duration: .5s;
+                transition: margin-right 2s;
             }
 
             .fa-check {

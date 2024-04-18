@@ -123,11 +123,13 @@ body {
   text-align: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 1s ease-out;
 }
 #home .R-buttonrounded:hover {
   transform: scale(1.1);
-  /*background: linear-gradient(200.64deg, #FF79DA 110.74%, #9356DC -5.2%),
-      linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));*/
+  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  /* background: linear-gradient(200.64deg, #FF79DA 110.74%, #9356DC -5.2%),
+       linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));*/
 }
 #home .fontionnement-container {
   margin-left: auto;
@@ -141,16 +143,17 @@ body {
   height: 31px;
 }
 #home .fontionnement-container .buttons {
+  flex-direction: column;
   display: flex;
   /*justify-content: space-between;*/
   width: 100%;
   justify-content: center;
-  gap: 30px;
+  gap: 25px;
 }
 #home .fontionnement-container .buttons a[class^=button-] {
   text-decoration: none;
   position: relative;
-  width: 28%;
+  width: 100%;
   height: 72.38px;
   border-radius: 20px;
   background: rgb(246, 246, 246);
@@ -158,8 +161,8 @@ body {
   display: flex;
   align-items: center;
   color: black;
-  /* padding-right: 38px;*/
-  padding-right: 28px;
+  padding-right: 25%;
+  padding-right: 25%;
 }
 #home .fontionnement-container .buttons a[class^=button-] i:nth-child(2) {
   margin: 0 23px;
@@ -179,13 +182,14 @@ body {
   padding: 30px 15%;
 }
 #home .cards {
-  display: flex;
+  flex-direction: column;
+  /*display: flex;*/
   justify-content: space-between;
   margin-bottom: 50px;
 }
 #home .cards .card {
   position: relative;
-  width: 460px;
+  width: 100%;
   height: 100%;
   max-height: 291px;
   border-radius: 15px;
@@ -258,7 +262,7 @@ body {
 #home .card .card__btn.menu__btn input:checked + label {
   background-image: url(../images/Icon/liked.png);
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) {
   #home .title {
     font-size: 1.5em;
   }
@@ -275,7 +279,8 @@ body {
     z-index: 1;
   }
   #home .fontionnement-container .buttons {
-    flex-direction: column;
+    display: flex;
+    /*flex-direction: column;*/
     width: 335px;
     margin-left: -27px;
   }
@@ -291,6 +296,64 @@ body {
   #home .fontionnement-container .buttons .button-3 {
     height: 72px;
     margin-bottom: 25px;
+  }
+  #home .cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  #home .cards .card {
+    position: relative;
+    width: 460px;
+    height: 100%;
+    max-height: 291px;
+    border-radius: 15px;
+    display: grid;
+    text-decoration: none;
+    color: black;
+  }
+  #home .card img {
+    width: 100%;
+    height: 231px;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+  }
+  #home .card .card__badge {
+    width: 80px;
+    height: 29px;
+    border-radius: 2px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    color: rgb(0, 135, 102);
+    background: rgb(153, 226, 208);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #home .card h4 {
+    margin: 0;
+  }
+  #home .card .card__content {
+    font-weight: 300;
+  }
+  #home .card .card__footer {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 18px;
+    border-radius: 0 0 15px 15px;
+  }
+  #home .card .card__footer .card__title {
+    font-size: 18px;
+  }
+  #home .card .card__footer .card__subtitle {
+    font-size: 17px;
   }
 }
 @media (max-width: 992px) {
@@ -430,6 +493,9 @@ body {
   padding: 15px 25px;
   cursor: pointer;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: margin-right 2s;
 }
 #menu .m-cards .card .c-t {
   margin-top: 0;
@@ -440,6 +506,9 @@ body {
 }
 #menu .m-cards .card .c-s.c-price {
   font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 #menu .m-cards .card .c-price {
   font-weight: 700;
@@ -475,6 +544,7 @@ body {
   border-radius: 100px;
   transform: rotate(180deg);
   transition-duration: 0.5s;
+  transition: margin-right 2s;
 }
 #menu .m-cards .card .fa-check {
   color: #99e2d0;
