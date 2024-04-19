@@ -298,6 +298,33 @@ body {
   }
 }
 
+#menu {
+  /*// Medium devices (tablets, 768px and up)
+  @media (max-width: 768px) {
+      .header {
+          box-shadow: none;
+          gap: 7%;
+      }
+
+      .c-menu {
+          width: 100%;
+          padding: 10px 0 30px 0;
+
+          .m-frame {
+              width: 95%;
+          }
+      }
+  }
+
+  // Large devices (desktops, 992px and up)
+  @media (max-width: 992px) {}
+
+  // X-Large devices (large desktops, 1200px and up)
+  @media (max-width: 1200px) {}
+
+  // XX-Large devices (larger desktops, 1400px and up)
+  @media (max-width: 1400px) {}*/
+}
 #menu .header {
   height: 96px;
   width: 100%;
@@ -307,10 +334,8 @@ body {
   position: relative;
 }
 #menu .header .fa-arrow-left {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  margin-left: -35%;
+  margin-left: -2.5em;
+  font-size: 25px;
 }
 #menu .header img {
   width: 200px;
@@ -337,7 +362,6 @@ body {
   background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 #menu .c-menu {
-  width: 80%;
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
@@ -345,8 +369,6 @@ body {
   margin-top: -55px;
   padding: 33px 13px 40px 13px;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
 }
 #menu .c-menu .header {
   display: flex;
@@ -382,7 +404,7 @@ body {
   background-image: url(../images/Icon/liked.png);
 }
 #menu .c-menu .m-frame {
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
 }
 #menu .c-menu .m-frame .card-t {
@@ -411,6 +433,7 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   transition: margin-right 2s;
+  animation: animation_formule 0.3s both;
 }
 #menu .m-cards .card .c-t {
   margin-top: 0;
@@ -486,38 +509,33 @@ body {
   width: 186px;
   height: 50px;
   background: linear-gradient(#FF79DA, #9356DC);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.25);
   color: #FFFFFF;
   border-radius: 25px;
   border-style: none;
   margin: 0 auto;
   font-size: 16px;
   cursor: pointer;
+  transition: all 400ms;
 }
 #menu .c-btnrounded:hover {
   transform: scale(1.1);
 }
-@media (max-width: 576px) {
+@media (min-width: 1024px) {
   #menu .header .fa-arrow-left {
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    margin-left: -15%;
-  }
-}
-@media (max-width: 768px) {
-  #menu .header {
-    box-shadow: none;
-    gap: 7%;
+    margin-left: -15em;
+    font-size: 30px;
   }
   #menu .c-menu {
-    width: 100%;
-    padding: 10px 0 30px 0;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   #menu .c-menu .m-frame {
-    width: 95%;
+    width: 70%;
   }
 }
+
 @keyframes price-anim {
   0% {
     width: 100%;
