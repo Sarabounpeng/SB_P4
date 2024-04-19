@@ -81,9 +81,28 @@ body {
            }
        }
    }*/
+  /* @media (max-width: 1200px) {
+       section.restaurants {
+           background: rgb(246, 246, 246);
+           padding: 30px 15px;
+
+           .cards {
+               display: block;
+               width: 100%;
+               justify-content: center;
+               margin-bottom: 0px;
+
+               .card {
+                   margin-bottom: 50px;
+                   width: 100%;
+               }
+           }
+       }
+
+   }*/
 }
 #home .header {
-  height: 96px;
+  height: 70px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -101,6 +120,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #EAEAEA;
+  box-shadow: 0 0 0.4em rgba(0, 0, 0, 0.25), inset 0 0 0.5em rgba(0, 0, 0, 0.25);
 }
 #home .location > i {
   margin-right: 17px;
@@ -116,12 +136,15 @@ body {
   align-items: center;
 }
 #home .title {
-  font-size: 2em;
+  font-size: 30px;
   padding: 0 !important;
   margin: 0 !important;
+  font-weight: 700;
 }
 #home .substitle {
-  font-size: 1em;
+  font-size: 1.125em;
+  color: #353535;
+  font-weight: 300;
 }
 #home .R-buttonrounded {
   width: 218px;
@@ -198,13 +221,18 @@ body {
 }
 #home section.restaurants {
   background: rgb(246, 246, 246);
-  padding: 30px 15%;
+  padding: 40px 5%;
 }
 #home .cards {
   flex-direction: column;
-  /*display: flex;*/
+  display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
+  /*@media only screen and (min-width: 1024px){
+      flex-direction: row;
+      gap: 50px;
+      align-items: center;
+        }*/
 }
 #home .cards .card {
   position: relative;
@@ -215,6 +243,8 @@ body {
   display: grid;
   text-decoration: none;
   color: black;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 18px;
 }
 #home .card img {
   width: 100%;
@@ -281,36 +311,31 @@ body {
 #home .card .card__btn.menu__btn input:checked + label {
   background-image: url(../images/Icon/liked.png);
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1024px) {
+  #home .header {
+    height: 96px;
+  }
   #home .title {
-    font-size: 1.5em;
+    font-size: 40px;
+    padding: 0 !important;
+    margin: 0 !important;
   }
-  #home .Hero {
-    width: unset;
-    padding: 30px 5px;
-  }
-  #home .header,
   #home .location {
     position: relative;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
   }
-  #home .header {
-    z-index: 1;
+  #home section.restaurants {
+    background: rgb(246, 246, 246);
+    padding: 40px 10%;
   }
   #home .cards {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
   }
   #home .cards .card {
-    position: relative;
-    width: 460px;
-    height: 100%;
-    max-height: 291px;
-    border-radius: 15px;
-    display: grid;
-    text-decoration: none;
-    color: black;
+    margin-bottom: 50px;
   }
   #home .card img {
     width: 100%;
@@ -354,22 +379,6 @@ body {
   }
   #home .card .card__footer .card__subtitle {
     font-size: 17px;
-  }
-}
-@media (max-width: 1200px) {
-  #home section.restaurants {
-    background: rgb(246, 246, 246);
-    padding: 30px 15px;
-  }
-  #home section.restaurants .cards {
-    display: block;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 0px;
-  }
-  #home section.restaurants .cards .card {
-    margin-bottom: 50px;
-    width: 100%;
   }
 }
 
