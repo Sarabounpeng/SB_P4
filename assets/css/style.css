@@ -118,6 +118,8 @@ body {
   border-radius: 25px;
   font-size: 16px;
   background: linear-gradient(#FF79DA, #9356DC);
+  /*background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(13.33deg, #FF79DA 123.93%, #9356DC -11.44%);*/
   border-style: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   color: #FFFFFF;
@@ -127,11 +129,13 @@ body {
   text-align: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 1s ease-out;
+  transition: all 1s ease;
 }
 #home .R-buttonrounded:hover {
-  transform: scale(1.1);
-  background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%), linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));
+  background: linear-gradient(rgba(255, 121, 217, 0.7607843137), rgba(146, 86, 220, 0.7607843137));
+  /*background: linear-gradient(13.33deg, #9256dcce -11.44%, #ff79d9b7 123.93%);
+              background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));*/
   /* background: linear-gradient(200.64deg, #FF79DA 110.74%, #9356DC -5.2%),
        linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));*/
 }
@@ -266,8 +270,9 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
+  transition: all 1s ease;
 }
-#home .card .card__btn.menu__btn input:checked + label {
+#home .card .card__btn.menu__btn input:checked + label, #home .card .card__btn.menu__btn input + label:hover {
   background-image: url(../images/Icon/liked.png);
 }
 @media only screen and (min-width: 1024px) {
