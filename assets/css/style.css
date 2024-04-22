@@ -133,11 +133,7 @@ body {
 }
 #home .R-buttonrounded:hover {
   background: linear-gradient(rgba(255, 121, 217, 0.7607843137), rgba(146, 86, 220, 0.7607843137));
-  /*background: linear-gradient(13.33deg, #9256dcce -11.44%, #ff79d9b7 123.93%);
-              background: linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%),
-  linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));*/
-  /* background: linear-gradient(200.64deg, #FF79DA 110.74%, #9356DC -5.2%),
-       linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15));*/
+  /*background: linear-gradient(13.33deg, #9256dcce -11.44%, #ff79d9b7 123.93%);*/
 }
 #home .fontionnement-container {
   margin-left: auto;
@@ -270,7 +266,7 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-  transition: all 1s ease;
+  transition: all 0.7s ease;
 }
 #home .card .card__btn.menu__btn input:checked + label, #home .card .card__btn.menu__btn input + label:hover {
   background-image: url(../images/Icon/liked.png);
@@ -404,8 +400,9 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
+  transition: all 0.7s ease;
 }
-#menu .c-menu .header .card__btn.menu__btn input:checked + label {
+#menu .c-menu .header .card__btn.menu__btn input:checked + label, #menu .c-menu .header .card__btn.menu__btn input + label:hover {
   background-image: url(../images/Icon/liked.png);
 }
 #menu .c-menu .m-frame {

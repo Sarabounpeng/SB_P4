@@ -82,9 +82,10 @@
                         background-size: contain;
                         background-repeat: no-repeat;
                         cursor: pointer;
+                        transition: all 0.7s ease;
                     }
     
-                    &:checked+label {
+                    &:checked+label,&+label:hover {
                         background-image: url(../images/Icon/liked.png);
                     }
                 }
