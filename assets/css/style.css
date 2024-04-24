@@ -132,6 +132,7 @@ body {
   transition: all 1s ease;
 }
 #home .R-buttonrounded:hover {
+  transform: scale(1.01);
   background: linear-gradient(rgba(255, 121, 217, 0.7607843137), rgba(146, 86, 220, 0.7607843137));
   /*background: linear-gradient(13.33deg, #9256dcce -11.44%, #ff79d9b7 123.93%);*/
 }
@@ -518,10 +519,11 @@ body {
   margin: 0 auto;
   font-size: 16px;
   cursor: pointer;
-  transition: all 400ms;
+  transition: all 300ms;
 }
 #menu .c-btnrounded:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
+  background: linear-gradient(rgba(255, 121, 217, 0.7607843137), rgba(146, 86, 220, 0.7607843137));
 }
 @media (min-width: 1024px) {
   #menu .header .fa-arrow-left {
@@ -552,6 +554,44 @@ body {
   }
   100% {
     transform: translateX(0px);
+  }
+}
+.m-cards:nth-child(even) {
+  position: relative;
+  animation-name: slide-left;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.m-cards:nth-child(odd) {
+  position: relative;
+  animation-name: slide-right;
+  animation-duration: 2.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes slide-left {
+  0% {
+    left: -200vh;
+  }
+  50% {
+    left: -200vh;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slide-right {
+  0% {
+    right: -200vh;
+  }
+  50% {
+    right: -200vh;
+  }
+  100% {
+    right: 0;
   }
 }
 footer {

@@ -150,6 +150,7 @@ body {
         transition: all 1s ease;
 
         &:hover {
+            transform: scale(1.01);
             background: linear-gradient(#ff79d9c2, #9256dcc2);
             /*background: linear-gradient(13.33deg, #9256dcce -11.44%, #ff79d9b7 123.93%);*/
            
