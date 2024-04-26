@@ -118,8 +118,6 @@ body {
   border-radius: 25px;
   font-size: 16px;
   background: linear-gradient(#FF79DA, #9356DC);
-  /*background: linear-gradient(#FF79DA, #9356DC);
-  background: linear-gradient(13.33deg, #FF79DA 123.93%, #9356DC -11.44%);*/
   border-style: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   color: #FFFFFF;
@@ -133,8 +131,8 @@ body {
 }
 #home .R-buttonrounded:hover {
   transform: scale(1.01);
-  background: linear-gradient(rgba(255, 121, 217, 0.7607843137), rgba(146, 86, 220, 0.7607843137));
-  /*background: linear-gradient(13.33deg, #9256dcce -11.44%, #ff79d9b7 123.93%);*/
+  /* background: linear-gradient(#ff79d9c2, #9256dcc2);*/
+  opacity: 0.7;
 }
 #home .fontionnement-container {
   margin-left: auto;
@@ -263,14 +261,15 @@ body {
   display: inline-block;
   width: 22px;
   height: 21px;
-  background-image: url(../images/Icon/dislike.png);
-  background-size: contain;
-  background-repeat: no-repeat;
   cursor: pointer;
   transition: all 0.7s ease;
+  /* background-image: url(../images/Icon/dislike.png);
+   background-size: contain;
+   background-repeat: no-repeat;*/
 }
 #home .card .card__btn.menu__btn input:checked + label, #home .card .card__btn.menu__btn input + label:hover {
-  background-image: url(../images/Icon/liked.png);
+  background: linear-gradient(#FF79DA, #9356DC);
+  /* background-image: url(../images/Icon/liked.png);*/
 }
 @media only screen and (min-width: 1024px) {
   #home .header {
@@ -556,20 +555,18 @@ body {
     transform: translateX(0px);
   }
 }
-.m-cards:nth-child(even) {
+.m-cards {
   position: relative;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
   animation-name: slide-left;
-  animation-duration: 2.5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
 }
-
+.m-cards:nth-child(even) {
+  animation-delay: 1s;
+}
 .m-cards:nth-child(odd) {
-  position: relative;
-  animation-name: slide-right;
-  animation-duration: 2.5s;
-  animation-iteration-count: 1;
-  animation-timing-function: linear;
+  animation-delay: 2s;
 }
 
 @keyframes slide-left {

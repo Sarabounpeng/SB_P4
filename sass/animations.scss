@@ -17,20 +17,26 @@
 		transform: translateX(0px);
 	}
 }
-.m-cards:nth-child(even){
+.m-cards{
     position: relative;
-    animation-name: slide-left;
-    animation-duration:2.5s;
+    animation-duration:1.5s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
-  }
-  .m-cards:nth-child(odd){
-    position: relative;
-    animation-name: slide-right;
-    animation-duration: 2.5s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-  }
+    animation-name:slide-left;
+   
+    &:nth-child(even){
+      animation-delay: 1s;  
+        
+        
+      }
+      &:nth-child(odd){
+        animation-delay: 2s;
+      
+        
+      }
+
+}
+
   
   @keyframes slide-left{
     0%{
