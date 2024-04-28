@@ -261,15 +261,16 @@ body {
   display: inline-block;
   width: 22px;
   height: 21px;
-  color: #999;
   cursor: pointer;
   transition: all 0.7s ease;
   font-size: 22px;
   font-weight: 400;
 }
 #home .card .card__btn.menu__btn input:checked + label i.fa-heart, #home .card .card__btn.menu__btn input + label:hover i.fa-heart {
-  color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 @media only screen and (min-width: 1024px) {
   #home .header {

@@ -24,53 +24,50 @@
     animation-timing-function: linear;
     animation-name:slide-left;
 }
+.m-frame > div:nth-child(1){
+    animation-delay: 1s;  
+    }
+  .m-frame > div:nth-child(2){
+      animation-delay: 1.25s;
+    }
+  .m-frame > div:nth-child(3){
+      animation-delay: 1.5s;
+       }
+  .m-frame > div:nth-child(4){
+       animation-delay: 1.75s;
+      }
+  .m-frame > div:nth-child(5){
+       animation-delay: 2s;
+       }
+  .m-frame > div:nth-child(6){
+      animation-delay: 2.25s;
+       }
+  .m-frame > div:nth-child(7){
+      animation-delay: 2.5s;
+      }
+  .m-frame > div:nth-child(8){
+      animation-delay: 2.75s;
+       }
+  .m-frame > div:nth-child(9){
+       animation-delay: 3s;
+      }
+   .m-frame > div:nth-child(10){
+      animation-delay: 3.25s;
+       }
+  .m-frame > div:nth-child(11){
+      animation-delay: 3.5s;
+       }
+  .m-frame > div:nth-child(12){
+       animation-delay: 3.75s;
+     }
+     .m-frame > div:nth-child(13){
+      animation-delay: 4s;
+     }
+     .m-frame > div:nth-child(14){
+       animation-delay: 4.25s;
+     }
    
-    .m-frame > div:nth-child(1){
-      animation-delay: 1s;  
-      }
-    .m-frame > div:nth-child(2){
-        animation-delay: 1.25s;
-      }
-    .m-frame > div:nth-child(3){
-        animation-delay: 1.5s;
-         }
-    .m-frame > div:nth-child(4){
-         animation-delay: 1.75s;
-        }
-    .m-frame > div:nth-child(5){
-         animation-delay: 2s;
-         }
-    .m-frame > div:nth-child(6){
-        animation-delay: 2.25s;
-         }
-    .m-frame > div:nth-child(7){
-        animation-delay: 2.5s;
-        }
-    .m-frame > div:nth-child(8){
-        animation-delay: 2.75s;
-         }
-    .m-frame > div:nth-child(9){
-         animation-delay: 3s;
-        }
-     .m-frame > div:nth-child(10){
-        animation-delay: 3.25s;
-         }
-    .m-frame > div:nth-child(11){
-        animation-delay: 3.5s;
-         }
-    .m-frame > div:nth-child(12){
-         animation-delay: 3.75s;
-       }
-       .m-frame > div:nth-child(13){
-        animation-delay: 4s;
-       }
-       .m-frame > div:nth-child(14){
-         animation-delay: 4.25s;
-       }
 
-
-
-  
   @keyframes slide-left{
     0%{
       left:-200vh;
