@@ -304,26 +304,26 @@ body {
             input {
                 display: none;
 
-                &+label {
+                &+label i.fa-heart {
                     display: inline-block;
                     width: 22px;
                     height: 21px;
+                    color: #999;
                     cursor: pointer;
                     transition: all 0.7s ease;
-
-
-                    
-                   /* background-image: url(../images/Icon/dislike.png);
-                    background-size: contain;
-                    background-repeat: no-repeat;*/
+                    font-size: 22px;
+                    font-weight: 400;
+                   
                    
                 }
+               
+                &:checked+label i.fa-heart, +label:hover i.fa-heart{
+               
+                    color:  linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 
-                &:checked+label,&+label:hover{
-                    background: linear-gradient(#FF79DA, #9356DC);
-
-                   /* background-image: url(../images/Icon/liked.png);*/
+                   font-weight: 900;
                 }
+               
             }
         }
 
