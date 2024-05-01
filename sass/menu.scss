@@ -62,32 +62,45 @@
                 font-size: 28px;
             }
 
-            .card__like.menu__like--bg {
+            /*.card__like.menu__like--bg {
                 background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -moz-background-clip: text;
                 -moz-text-fill-color: transparent;
-            }
+            }*/
     
             .card__btn.menu__btn {
                 input {
                     display: none;
     
-                    &+label {
-                        display: inline-block;
-                        width: 22px;
-                        height: 21px;
-                        background-image: url(../images/Icon/dislike.png);
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        cursor: pointer;
-                        transition: all 0.7s ease;
-                    }
+                    & + label{
+                        position: relative;
+                            i.fa-heart{
+                             display: inline-block;
+                             font-size: 22px;
+                             color: #999;
+                             cursor: pointer;
     
-                    &:checked+label,&+label:hover {
-                        background-image: url(../images/Icon/liked.png);
+                             & + .fa-solid.fa-heart{
+                             background:  linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            position: absolute;
+                            left: 0;
+                            top:-4px;
+                            opacity: 0;
+                            transition: all 0.7s ease;
+                             }
+                        }
+                            &:hover i.fa-solid.fa-heart{
+                            opacity: 1;
+                            }
                     }
+                    &:checked + label i.fa-solid.fa-heart{
+                            opacity: 1;
+                    }
+                   
                 }
             }
         }

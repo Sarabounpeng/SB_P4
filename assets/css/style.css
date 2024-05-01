@@ -379,6 +379,13 @@ body {
   display: flex;
   justify-content: center;
   gap: 15px;
+  /*.card__like.menu__like--bg {
+      background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+  }*/
 }
 #menu .c-menu .header h2 {
   text-align: center;
@@ -386,28 +393,33 @@ body {
   font-weight: 400;
   font-size: 28px;
 }
-#menu .c-menu .header .card__like.menu__like--bg {
-  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-background-clip: text;
-  -moz-text-fill-color: transparent;
-}
 #menu .c-menu .header .card__btn.menu__btn input {
   display: none;
 }
 #menu .c-menu .header .card__btn.menu__btn input + label {
+  position: relative;
+}
+#menu .c-menu .header .card__btn.menu__btn input + label i.fa-heart {
   display: inline-block;
-  width: 22px;
-  height: 21px;
-  background-image: url(../images/Icon/dislike.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  font-size: 22px;
+  color: #999;
   cursor: pointer;
+}
+#menu .c-menu .header .card__btn.menu__btn input + label i.fa-heart + .fa-solid.fa-heart {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  left: 0;
+  top: -4px;
+  opacity: 0;
   transition: all 0.7s ease;
 }
-#menu .c-menu .header .card__btn.menu__btn input:checked + label, #menu .c-menu .header .card__btn.menu__btn input + label:hover {
-  background-image: url(../images/Icon/liked.png);
+#menu .c-menu .header .card__btn.menu__btn input + label:hover i.fa-solid.fa-heart {
+  opacity: 1;
+}
+#menu .c-menu .header .card__btn.menu__btn input:checked + label i.fa-solid.fa-heart {
+  opacity: 1;
 }
 #menu .c-menu .m-frame {
   width: 100%;
