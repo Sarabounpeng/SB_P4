@@ -292,42 +292,36 @@ body {
             }
         }
 
-        /*.card__like.menu__like--bg {
-            background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -moz-background-clip: text;
-            -moz-text-fill-color: transparent;
-        }*/
 
         .card__btn.menu__btn {
             input {
                 display: none;
 
-                &+label i.fa-heart {
-                    display: inline-block;
-                    width: 22px;
-                    height: 21px;
-                    cursor: pointer;
-                    color:gray;
-                    -webkit-background-clip: text;
-                    /*-webkit-text-fill-color: transparent;*/
-                    transition: all 0.7s ease;
-                    font-size: 22px;
-                    font-weight: 400;
-                   
-                  
+                & + label{
+                    position: relative;
+                        i.fa-heart{
+                         display: inline-block;
+                         font-size: 22px;
+                         color: #999;
+                         cursor: pointer;
+
+                         & + .fa-solid.fa-heart{
+                         background:  linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        position: absolute;
+                        left: 0;
+                        top:-4px;
+                        opacity: 0;
+                        transition: all 0.7s ease;
+                         }
+                    }
+                        &:hover i.fa-solid.fa-heart{
+                        opacity: 1;
+                        }
                 }
-               
-                &:checked+label i.fa-heart, +label:hover i.fa-heart{
-               
-                    background:  linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                   font-weight: 900;
-                    -webkit-background-clip: text;
-                  -webkit-text-fill-color: transparent;
-                 
-                  
-                   
+                &:checked + label i.fa-solid.fa-heart{
+                        opacity: 1;
                 }
                
             }
