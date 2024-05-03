@@ -18,6 +18,8 @@
 	}
 }
 .m-frame > div{
+   left:-200vw;
+   animation-fill-mode: forwards;
     position: relative;
     animation-duration:1.5s;
     animation-iteration-count: 1;
@@ -70,10 +72,7 @@
 
   @keyframes slide-left{
     0%{
-      left:-200vh;
-    }
-    50%{
-      left:-200vh;
+      left:-200vw;
     }
     100%{
       left:0;

@@ -40,18 +40,18 @@ body {
   animation: circles 1.2s ease-in-out infinite;
   border-radius: 100%;
 }
-.loader .loader-container i .loader-container i:nth-child(1) {
-  background-color: #9356DC;
+.loader .loader-container i:nth-child(1) {
+  color: #9356DC;
   animation-delay: 0s;
   position: relative;
 }
-.loader .loader-container i .loader-container i:nth-child(2) {
-  background-color: #FF79DA;
+.loader .loader-container i:nth-child(2) {
+  color: #FF79DA;
   animation-delay: 0.2s;
   position: relative;
 }
-.loader .loader-container i .loader-container i:nth-child(3) {
-  background-color: #99E2D0;
+.loader .loader-container i:nth-child(3) {
+  color: #99E2D0;
   animation-delay: 0.4s;
   position: relative;
 }
@@ -167,6 +167,15 @@ body {
 }
 #home .fontionnement-container .buttons div i {
   margin: 0 23px;
+}
+#home .fontionnement-container .buttons div i.fa-mobile-screen {
+  color: #7e7e7e;
+}
+#home .fontionnement-container .buttons div i.fa-list-ul {
+  color: #7e7e7e;
+}
+#home .fontionnement-container .buttons div i.fa-store {
+  color: #9356DC;
 }
 #home .fontionnement-container .buttons div span {
   width: 20px;
@@ -572,6 +581,8 @@ body {
   }
 }
 .m-frame > div {
+  left: -200vw;
+  animation-fill-mode: forwards;
   position: relative;
   animation-duration: 1.5s;
   animation-iteration-count: 1;
@@ -637,10 +648,7 @@ body {
 
 @keyframes slide-left {
   0% {
-    left: -200vh;
-  }
-  50% {
-    left: -200vh;
+    left: -200vw;
   }
   100% {
     left: 0;
