@@ -132,7 +132,9 @@ body {
 #home .R-buttonrounded:hover {
   transform: scale(1.01);
   /* background: linear-gradient(#ff79d9c2, #9256dcc2);*/
-  opacity: 0.7;
+  /*opacity: 0.7;*/
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.619);
+  background: linear-gradient(rgba(255, 121, 217, 0.7607843137), rgba(146, 86, 220, 0.7607843137));
 }
 #home .fontionnement-container {
   margin-left: auto;
@@ -548,6 +550,7 @@ body {
 #menu .c-btnrounded:hover {
   transform: scale(1.01);
   background: linear-gradient(rgba(255, 121, 217, 0.7607843137), rgba(146, 86, 220, 0.7607843137));
+  box-shadow: 0 4px 10px 0px rgba(0, 0, 0, 0.42);
 }
 @media (min-width: 1024px) {
   #menu .header .fa-arrow-left {
