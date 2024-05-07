@@ -349,8 +349,11 @@ body {
   justify-content: center;
   position: relative;
 }
+#menu .header a {
+  position: absolute;
+  left: 25px;
+}
 #menu .header .fa-arrow-left {
-  margin-left: -2.5em;
   font-size: 25px;
 }
 #menu .header img {
@@ -467,6 +470,9 @@ body {
 #menu .m-cards .card .c-t {
   margin-top: 0;
   font-size: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 #menu .m-cards .card .c-s {
   font-size: 15px;
@@ -495,7 +501,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 0 15.4px 15.4px 0;
-  transform: translate(60px);
+  transform: translate(62px);
 }
 #menu .m-cards .card .c_check:hover {
   margin-right: 0;
@@ -554,7 +560,6 @@ body {
 }
 @media (min-width: 1024px) {
   #menu .header .fa-arrow-left {
-    margin-left: -15em;
     font-size: 30px;
   }
   #menu .c-menu {

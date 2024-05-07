@@ -7,8 +7,12 @@
         justify-content: center;
         position: relative;
 
+        a{
+            position: absolute;
+            left: 25px;
+        }
+
         .fa-arrow-left {
-            margin-left: -2.5em;
             font-size: 25px;
         }
 
@@ -148,6 +152,9 @@
             .c-t {
                 margin-top: 0;
                 font-size: 18px;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
             }
 
             .c-s {
@@ -180,7 +187,7 @@
                 justify-content: center;
                 align-items: center;
                 border-radius: 0 15.4px 15.4px 0;
-                transform: translate(60px);
+                transform: translate(62px);
             }
 
             .c_check:hover {
@@ -263,8 +270,6 @@
 
         .header{
         .fa-arrow-left {
-           
-            margin-left: -15em;
             font-size: 30px;
         }
     } 
