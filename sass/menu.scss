@@ -66,13 +66,6 @@
                 font-size: 28px;
             }
 
-            /*.card__like.menu__like--bg {
-                background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                -moz-background-clip: text;
-                -moz-text-fill-color: transparent;
-            }*/
     
             .card__btn.menu__btn {
                 input {
@@ -146,8 +139,8 @@
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
-            transition: margin-right 2s;
-            animation: animation_formule 0.3s both;
+            transition: all 0.3s ease;
+          
 
             .c-t {
                 margin-top: 0;
@@ -188,12 +181,8 @@
                 align-items: center;
                 border-radius: 0 15.4px 15.4px 0;
                 transform: translate(62px);
-            }
-
-            .c_check:hover {
-                margin-right: 0;
-                animation: selectmenu 0.5s ease;
-            }
+                transition: all 0.3s ease;
+              }
 
             .c_anim {
                 height: 25px;
@@ -216,13 +205,11 @@
             }
 
             &:hover {
-                .sub {
-                    width: 90%;
-                    animation: price-anim 1s ease 0s 1 normal forwards;
-                }
+                padding:15px 60px 15px 25px;
+                
                 .c_check{
                     transform: translate(0px);
-                    animation: check-menu-anim 1s ease 0s 1 normal forwards;
+                   
                 }
             
             }

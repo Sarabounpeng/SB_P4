@@ -393,13 +393,6 @@ body {
   display: flex;
   justify-content: center;
   gap: 15px;
-  /*.card__like.menu__like--bg {
-      background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -moz-background-clip: text;
-      -moz-text-fill-color: transparent;
-  }*/
 }
 #menu .c-menu .header h2 {
   text-align: center;
@@ -464,8 +457,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  transition: margin-right 2s;
-  animation: animation_formule 0.3s both;
+  transition: all 0.3s ease;
 }
 #menu .m-cards .card .c-t {
   margin-top: 0;
@@ -502,10 +494,7 @@ body {
   align-items: center;
   border-radius: 0 15.4px 15.4px 0;
   transform: translate(62px);
-}
-#menu .m-cards .card .c_check:hover {
-  margin-right: 0;
-  animation: selectmenu 0.5s ease;
+  transition: all 0.3s ease;
 }
 #menu .m-cards .card .c_anim {
   height: 25px;
@@ -523,13 +512,11 @@ body {
   color: #99e2d0;
   justify-content: flex-end;
 }
-#menu .m-cards .card:hover .sub {
-  width: 90%;
-  animation: price-anim 1s ease 0s 1 normal forwards;
+#menu .m-cards .card:hover {
+  padding: 15px 60px 15px 25px;
 }
 #menu .m-cards .card:hover .c_check {
   transform: translate(0px);
-  animation: check-menu-anim 1s ease 0s 1 normal forwards;
 }
 #menu .m-cards .card .sub {
   justify-content: space-between;
